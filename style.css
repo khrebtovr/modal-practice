@@ -1,0 +1,31 @@
+.modal-outer{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .6s;
+}
+.modal-inner{
+    width: 500px;
+    height: 500px;
+    background: yellowgreen;
+    position: relative;
+}
+.modal-outer.open{
+    opacity: 1;
+    pointer-events: all;
+}
+.close-modal{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+main{
+    display: flex;
+}
